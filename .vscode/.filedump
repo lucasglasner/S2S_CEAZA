@@ -1,0 +1,6 @@
+
+		begin
+      f = addfile("/home/lucas/projects/S2S_FORECAST/data/skill_Atacama.nc","r")
+      print(f)
+		end
+    
