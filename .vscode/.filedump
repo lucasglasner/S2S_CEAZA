@@ -1,6 +1,0 @@
-
-		begin
-      f = addfile("/home/lucas/projects/S2S_FORECAST/data/GLORYS12V1/HOVMOLLERS/data/tropical/2000-1.nc","r")
-      print(f)
-		end
-    
