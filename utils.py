@@ -156,7 +156,7 @@ def filter_timeseries(ts, order, cutoff, btype='lowpass', fs=1, **kwargs):
         return nans
     else:
         b, a = signal.butter(order, cutoff, btype=btype, fs=fs)
-        filt=signal.filtfilt(b, a, ts[~mask], padlen=30*max(len(a),len(b)), **kwargs)
+        filt=signal.filtfilt(b, a, ts[~mask], **kwargs)
         output=np.ones(len(ts))*np.nan
         output[np.where(~mask)] = filt
         return output
